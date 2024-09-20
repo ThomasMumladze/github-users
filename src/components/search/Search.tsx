@@ -1,6 +1,8 @@
 import "./style.scss";
 import * as Icon from "react-bootstrap-icons";
 
+import { Loading } from "../loading/Loading";
+
 interface Props {
     isDarkMode: boolean;
 }
@@ -25,6 +27,7 @@ export const Search = (props: Props) => {
                 />
                 <button style={{ backgroundColor: isDarkMode ? "#0061cf" : "" }}>Search</button>
             </div>
+            <Loading />
         </div>
     );
 };

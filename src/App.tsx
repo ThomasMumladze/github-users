@@ -1,7 +1,9 @@
 import "./App.css";
+
 import { Search } from "./components/search/Search";
-import useDarkMode from "./hook/useDarkMode";
 import { Header } from "./layout/Header";
+
+import useDarkMode from "./hook/useDarkMode";
 
 function App() {
     const { handleDarkMode, isDarkMode } = useDarkMode();
