@@ -1,0 +1,31 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: "SpaceMono";
+    src: url("./assets/font/SpaceMono-Regular.ttf");
+}
+
+@font-face {
+    font-family: "SpaceMono-Bold";
+    src: url("./assets/font/SpaceMono-Bold.ttf");
+}
+
+body {
+    transition: 0.2s ease-in-out;
+}
+
+.darkMode-on {
+    background-color: #141d2f;
+}
+
+.darkMode-off {
+    background-color: #f6f8ff;
+}
+
+.App {
+    margin: 0 auto;
+    width: 60%;
+}
