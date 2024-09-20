@@ -1,0 +1,18 @@
+.darkMode {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    user-select: none;
+    width: 80px;
+
+    p {
+        font-family: "SpaceMono-Bold";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        text-transform: uppercase;
+    }
+}
