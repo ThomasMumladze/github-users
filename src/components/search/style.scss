@@ -1,6 +1,5 @@
 .search {
     position: relative;
-    flex: 1;
 
     .search-field {
         align-items: center;
@@ -8,6 +7,7 @@
         border-radius: 15px;
         display: flex;
         height: 50px;
+        margin-bottom: 62px;
         padding: 10px;
         transition: 0.2s ease-in-out;
 
@@ -62,13 +62,11 @@
     .loading {
         align-items: center;
         display: flex;
-        height: 80px;
         justify-content: center;
+        position: absolute;
+        transition: 0s ease-in-out;
+        top: 60px;
         width: 100%;
-
-        @media screen and (max-width: 762px) {
-            margin-top: 22px;
-        }
     }
 }
 
@@ -88,6 +86,12 @@
 
             .user-data {
                 width: 100%;
+            }
+
+            @media screen and (max-width: 776px) {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 22px;
             }
         }
     }

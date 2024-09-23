@@ -1,7 +1,9 @@
 .fullName {
     align-items: center;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    gap: 12px;
 
     span {
         font-weight: 600;

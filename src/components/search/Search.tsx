@@ -75,7 +75,6 @@ export const Search = (props: Props) => {
                 style={{
                     backgroundColor: !isDarkMode ? "#FFF" : "#1e2a47",
                     boxShadow: !isDarkMode ? "" : "none",
-                    marginBottom: loading ? "0px" : "45px",
                 }}
             >
                 <Icon.Search width={26} height={26} fill="dodgerblue" style={{ marginLeft: "25px" }} />

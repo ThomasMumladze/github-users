@@ -41,3 +41,10 @@ body {
         width: 90%;
     }
 }
+
+@media screen and (max-width: 555px) {
+    .App {
+        padding: 26px 0px;
+        width: 90%;
+    }
+}
