@@ -1,0 +1,22 @@
+.fullName {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+    span {
+        font-weight: 600;
+        font-family: "SpaceMono";
+        font-size: 15px;
+        line-height: 22px;
+        text-align: right;
+        color: #697c9a;
+    }
+
+    h2 {
+        font-weight: 900;
+        font-family: "SpaceMono";
+        font-size: 26px;
+        line-height: 39px;
+        transition: 0.2s ease-in-out;
+    }
+}
