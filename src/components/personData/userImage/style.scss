@@ -1,0 +1,28 @@
+.image-user {
+    align-items: center;
+    border-radius: 50%;
+    display: flex;
+    height: 117px;
+    justify-content: center;
+    min-height: 117px;
+    min-width: 117px;
+    max-height: 117px;
+    max-width: 117px;
+    overflow: hidden;
+    width: 117px;
+
+    img {
+        border-radius: 50%;
+        height: 100%;
+        object-fit: cover;
+        transition: 0.25s ease-in-out;
+        width: 100%;
+    }
+
+    &:hover {
+        img {
+            height: 120%;
+            width: 120%;
+        }
+    }
+}
