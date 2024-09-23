@@ -1,0 +1,41 @@
+.networking {
+    width: 100%;
+
+    .top-container {
+        margin-bottom: 16px;
+    }
+
+    .top-container,
+    .bottom-container {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        div {
+            align-items: center;
+            display: flex;
+            gap: 8px;
+
+            p,
+            a {
+                color: #4b6a9b;
+                font-weight: 600;
+                font-family: "SpaceMono";
+                font-size: 15px;
+                line-height: 22px;
+                text-align: left;
+                transition: 0.2s ease-in-out;
+            }
+
+            p {
+                user-select: none;
+            }
+        }
+    }
+
+    svg {
+        height: 21px;
+        width: 21px;
+    }
+}
