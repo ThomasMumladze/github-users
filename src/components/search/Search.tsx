@@ -75,7 +75,7 @@ export const Search = (props: Props) => {
                 style={{
                     backgroundColor: !isDarkMode ? "#FFF" : "#1e2a47",
                     boxShadow: !isDarkMode ? "" : "none",
-                    marginBottom: userData ? "45px" : "0px",
+                    marginBottom: loading ? "0px" : "45px",
                 }}
             >
                 <Icon.Search width={26} height={26} fill="dodgerblue" style={{ marginLeft: "25px" }} />
@@ -91,7 +91,12 @@ export const Search = (props: Props) => {
                     Search
                 </button>
             </div>
-            <div className="loading">{loading ? <Loading /> : null}</div>
+            {loading ? (
+                <div className="loading">
+                    {" "}
+                    <Loading />
+                </div>
+            ) : null}
             <Result isDarkMode={isDarkMode} userData={userData} />
         </div>
     );
