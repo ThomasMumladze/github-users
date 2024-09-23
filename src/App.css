@@ -14,6 +14,7 @@
 }
 
 body {
+    height: 100%;
     transition: 0.2s ease-in-out;
 }
 
@@ -26,6 +27,17 @@ body {
 }
 
 .App {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     margin: 0 auto;
-    width: 60%;
+    padding: 56px;
+    width: 65%;
+}
+
+@media screen and (max-width: 1324px) {
+    .App {
+        padding: 56px 0px;
+        width: 90%;
+    }
 }
