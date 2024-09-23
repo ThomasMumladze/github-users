@@ -1,0 +1,33 @@
+.audience {
+    align-items: center;
+    border-radius: 10px;
+    display: flex;
+    height: 85px;
+    justify-content: space-evenly;
+    margin-bottom: 27px;
+    transition: 0.2s ease-in-out;
+    user-select: none;
+    width: 100%;
+
+    div {
+        font-family: "SpaceMono";
+        text-align: center;
+
+        p {
+            font-weight: 600;
+            font-size: 13px;
+        }
+
+        h3 {
+            color: #2b3442;
+            font-weight: 700;
+            font-size: 22px;
+            text-transform: uppercase;
+        }
+
+        p,
+        h3 {
+            transition: 0.2s ease-in-out;
+        }
+    }
+}
