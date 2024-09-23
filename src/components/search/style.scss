@@ -1,12 +1,13 @@
 .search {
     position: relative;
+    flex: 1;
+
     .search-field {
         align-items: center;
         box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
         border-radius: 15px;
         display: flex;
         height: 50px;
-        margin-bottom: 45px;
         padding: 10px;
         transition: 0.2s ease-in-out;
 
@@ -27,6 +28,22 @@
             }
         }
 
+        .errorBox {
+            color: #f74646;
+            font-size: 14px;
+            font-family: sans-serif;
+            font-weight: normal;
+            position: absolute;
+            right: 130px;
+            text-transform: uppercase;
+            user-select: none;
+
+            @media screen and (max-width: 762px) {
+                right: 12px;
+                top: 82px;
+            }
+        }
+
         button {
             border: none;
             background: #0079ff;
@@ -36,9 +53,42 @@
             font-family: "SpaceMono";
             font-size: 16px;
             height: 50px;
+            min-width: 106px;
             outline: none;
             transition: 0.2s ease-in-out;
-            width: 106px;
+        }
+    }
+
+    .loading {
+        align-items: center;
+        display: flex;
+        height: 80px;
+        justify-content: center;
+        width: 100%;
+
+        @media screen and (max-width: 762px) {
+            margin-top: 22px;
+        }
+    }
+}
+
+// --- search result styles ---  //
+
+.result {
+    border-radius: 15px;
+    padding: 36px;
+    transition: 0.2s ease-in-out;
+
+    .user-container {
+        > div {
+            align-items: flex-start;
+            display: flex;
+            justify-content: flex-start;
+            gap: 77px;
+
+            .user-data {
+                width: 100%;
+            }
         }
     }
 }
